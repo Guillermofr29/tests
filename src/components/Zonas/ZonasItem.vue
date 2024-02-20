@@ -23,8 +23,8 @@
   const props = defineProps<IZonas>();
   const emits = defineEmits(['eliminarZona']);
   
-  const backgroundColor = ref('#FFFFFF');
-  const textColor = ref('#4caf50');
+  const backgroundColor = ref('');
+  const textColor = ref('');
   const border = ref('1px solid');
 
   const confirmarEliminar = () => {
@@ -50,52 +50,4 @@ const eliminarZona = () => {
     transition: background-color 0.3s, color 0.3s;
   }
 
-  .titulo{
-    text-align: center;
-    font-weight: bold;
-    border-radius: 10px 10px 0 0;
-    padding: 0;
-    margin: 0;
-  }
-
-  .disponible, .precio, .descripcion{
-    font-weight: bold;
-    text-align: justify;
-  }
-
-  .img {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
-  margin-top: 10px; 
-  border-radius: 15px;
-  padding: 10px 0;
-  }
-
-  .btn{
-    display: block;
-    margin: 10px auto;
-    padding: 5px 10px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-
-  p{
-    padding: 0 10px;
-  }
-
-.btnEliminar {
-  display: block;
-    margin: 10px auto; 
-    padding: 5px 10px;
-    background-color: #ff3636;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
 </style>

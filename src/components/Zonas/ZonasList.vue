@@ -106,7 +106,6 @@ const tituloDuplicado = (titulo: string): boolean => {
 
 h1{
   text-align: center;
-  color: #4caf50;
   font-weight: bold;
   padding: 0;
   margin: 0;
@@ -117,28 +116,5 @@ h1{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
-}
-
-.btnNuevo{
-    display: block;
-    margin: 10px auto;
-    padding: 5px 10px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-
-@media (max-width: 768px) {
-  .zonas-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .zonas-list {
-    grid-template-columns: 1fr;
-  }
 }
 </style>
